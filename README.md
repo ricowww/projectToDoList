@@ -1,6 +1,6 @@
 #Tasks
 [done]plan
-[]webpack
+[done]webpack
 []module/functions
 []assemble
 []css
