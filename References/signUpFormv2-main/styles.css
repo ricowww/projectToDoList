@@ -1,0 +1,124 @@
+        /* remove extra spaces between elements and edges of browser */
+        /* make a large pad, load image as div bg, dont repeat image, make image fill border box */
+        body {
+            margin: 0;
+            background: url(grill.jpg);    /* image */
+            background-size: cover; /* ensure whole container is covered vs contain */
+            background-attachment: fixed; /* disappears as browser moves vs scroll which moves with browser*/
+            display: flex;
+            justify-content:flex-end;
+        }
+
+        #left{
+            height: 20vmin;
+            width: 40vmax;
+            background-color: rgb(0, 0, 0);
+            opacity: 0.8;
+            position: absolute;
+            top: 33%;
+            left:0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            
+
+        }
+        
+
+        #right{
+            height: 100vmin;
+            width: 60vmax;
+            background-color: cornsilk;
+            display:grid;
+            grid-template-rows: calc(100%/3) calc(100%/3) calc(100%/3);
+            grid-template-columns: 100%;
+
+        }
+
+        #divTop{
+            display:flex;
+            justify-content:center; /* align hz center */
+            align-items:flex-end; /* align content to bottom */
+            background-color: gray;
+            height: 100%;
+            width: 100%;
+            
+        }
+
+        #divCenter{
+            display:flex;
+            justify-content:center; /* align hz center */
+            align-items:center; /* align content to bottom */
+            text-align: center;
+            background-color: orange;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        #divBottom{
+            display:flex;
+            justify-content:center; /* align hz center */
+            align-items:flex-start; /* align content to bottom */
+            background-color: grey;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2vw;
+            text-align: center;
+        }
+
+        
+
+        label{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 1em;
+        }
+
+        #formContainer{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            
+        }
+
+        
+        /* import font */
+        @font-face {
+            font-family: 'Norse-Bold';
+            src: url("Norse-Bold.woff2");
+        }
+
+        /* apply font to h1 */
+        figcaption {
+            font-family: 'Norse-Bold', Arial, sans-serif;
+            font-weight:normal;
+            font-style:normal;
+            font-size: 1em;
+            color: white;
+        }
+
+        img{
+            height: 100px;
+            width: auto;
+        }
+
+        #buttonReg{
+            padding: 0px 4vw;
+            border-radius: 1vw;
+        }
+
+        #divBottom{
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start; /* align hz center */
+            align-items:center; /* align content to bottom */
+
+        }
+        
+        
