@@ -2,15 +2,15 @@
 //if the element has the tag, store them in a list.
 
 function perTagList(inputArray, tagCriteria, outputArray){
-    outputArray = [];//reset during refresh to avoid stacking array
     for (let elem of inputArray){ //for all elements in the array
         if (elem.tag == tagCriteria){ //check the tag property of each element
             console.log(elem);
             outputArray.push(elem);
-            console.log(outputArray);//works only when tested in console*
         };
     };
-}
+} 
+
+
 
 //outputArray //yields an empty array*
 

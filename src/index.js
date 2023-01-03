@@ -6,27 +6,29 @@ import './styles/main.css'
 //Test moduleTest
 console.log(moduleTest());
 
-
+//////////////////////////////////
 //Test perTagList
 ///Input array
 let inpAr = [
-    {tag: "a"},
-    {tag: "a"},
-    {tag: "a"},
-    {tag: "a"},
-    {tag: "a"},
-    {tag: "b"},
-    {tag: "a"},
-    {tag: "b"},
-    {tag: "b"},
-    {tag: "c"},
-    {tag: "c"}
+    {"tag": "a"},
+    {"tag": "a"},
+    {"tag": "a"},
+    {"tag": "a"},
+    {"tag": "a"},
+    {"tag": "b"},
+    {"tag": "a"},
+    {"tag": "b"},
+    {"tag": "b"},
+    {"tag": "c"},
+    {"tag": "c"}
 ];
 ///Tag
-let tagCr = "a";
+let tagCr = "b";
 ///Output array
-let outputAr= [];
+let outputAr = [];
 ///Call
 perTagList(inpAr, tagCr, outputAr);
 ///Output
 console.log(outputAr);
+//working
+//////////////////////////////////
