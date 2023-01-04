@@ -1,6 +1,8 @@
 import moduleTest from "./moduleTest"
 import perTagList from "./perTagList"
 import generateTaskList from "./generateTaskList"
+import validNameCheck from "./validNameCheck"
+
 import './styles/main.css' 
 //to get the style into the code
 
@@ -58,3 +60,15 @@ generateTaskList(inpArGen, idCall);
 ///Output
 ///Divs will appear in the html
 //////////////////////////////////
+
+
+/////////////////////////////////////
+//testing validNameCheck
+
+console.log(validNameCheck());
+//working
+/////////////////////////////////////
+
+
+
+/////////////////////////////////////

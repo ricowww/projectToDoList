@@ -1,7 +1,10 @@
 #Tasks
 [done]plan
 [done]webpack
-[]module/functions
+[on-going]module/functions, see draw.io file
+    [done] from tags, make a list
+    [done] from an array, make a div list
+    [ ] from an array, make a subset of an object array
 []dom
 []assemble
 []css
