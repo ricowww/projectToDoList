@@ -10,7 +10,10 @@ function validNameCheck(){
         validNameCheckVar = prompt("Enter Name");
     };
     //handout the name
+    console.log("validNameCheck.js is working")
+
     return validNameCheckVar;
+
 }
 export default validNameCheck;
 

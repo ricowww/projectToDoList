@@ -4,7 +4,7 @@
     //will have an inline checkbox
     //these div will have a name title div
     //also a tag in form of a button
-function generateTaskList(tasksObjectsArray, anchorPointId){
+function objArrayToTaskDivs(tasksObjectsArray, anchorPointId){
     //declare anchor point based on input
     let anchorPoint = document.getElementById(anchorPointId);
     for (let element of tasksObjectsArray){
@@ -30,5 +30,6 @@ function generateTaskList(tasksObjectsArray, anchorPointId){
         tempDivDomHolder.appendChild(tempDivDomHolder.dateDiv);
         anchorPoint.appendChild(tempDivDomHolder);
     };
+    console.log("objArrayToTaskDivs.js is working")
 };
-export default generateTaskList;
+export default objArrayToTaskDivs;

@@ -1,6 +1,6 @@
 import moduleTest from "./moduleTest"
-import perTagList from "./perTagList"
-import generateTaskList from "./generateTaskList"
+import perTagObjArray from "./perTagObjArray"
+import objArrayToTaskDivs from "./objArrayToTaskDivs"
 import validNameCheck from "./validNameCheck"
 
 import './styles/main.css' 
@@ -29,10 +29,12 @@ let inpAr = [
 let tagCr = "b";
 ///Output array
 let outputAr = [];
+
 ///Call
-perTagList(inpAr, tagCr, outputAr);
+let test = perTagObjArray(inpAr, tagCr, outputAr);
 ///Output
-console.log(outputAr);
+console.log(test);
+
 //working
 //////////////////////////////////
 
@@ -56,7 +58,7 @@ let inpArGen = [
 //Define id to be used to call the anchorpoint
 let idCall = "test";//point to the div in the html
 ///Call
-generateTaskList(inpArGen, idCall);
+objArrayToTaskDivs(inpArGen, idCall);
 ///Output
 ///Divs will appear in the html
 //////////////////////////////////
