@@ -8,6 +8,8 @@ function taskDetailsPrompt(nameVar,tagVar, dateVar, idVar){
     tagVar = prompt("Enter Tag");
     dateVar = prompt("Enter Due Date");
     idVar = prompt("Enter ID");
+    //message
+    console.log(`taskDetailsPrompt is working, nameVar: ${nameVar}, tagVar: ${tagVar}, dateVar: ${dateVar}, idVar: ${idVar}`);
 }
 
 export default taskDetailsPrompt;

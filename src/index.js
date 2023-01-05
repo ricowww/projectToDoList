@@ -2,6 +2,7 @@ import moduleTest from "./moduleTest"
 import perTagObjArray from "./perTagObjArray"
 import objArrayToTaskDivs from "./objArrayToTaskDivs"
 import validNameCheck from "./validNameCheck"
+import taskDetailsPrompt from "./taskDetailsPrompt"
 
 import './styles/main.css' 
 //to get the style into the code
@@ -71,6 +72,6 @@ console.log(validNameCheck());
 //working
 /////////////////////////////////////
 
-
-
 /////////////////////////////////////
+//Test generateTaskList
+taskDetailsPrompt();

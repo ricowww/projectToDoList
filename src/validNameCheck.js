@@ -11,7 +11,6 @@ function validNameCheck(){
     };
     //handout the name
     console.log("validNameCheck.js is working")
-
     return validNameCheckVar;
 
 }
