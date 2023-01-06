@@ -2,10 +2,9 @@ import moduleTest from "./moduleTest"
 import perTagObjArray from "./perTagObjArray"
 import objArrayToTaskDivs from "./objArrayToTaskDivs"
 import validNameCheck from "./validNameCheck"
-import taskDetailsPrompt from "./taskDetailsPrompt"
-
+import {nameTempVar,tagTempVar, dateTempVar, idTempVar, taskDetailsPrompt} from "./taskDetailsPrompt"
+import {Task} from "./taskObjecConstruct.js"
 import './styles/main.css' 
-//to get the style into the code
 
 //Test moduleTest
 console.log(moduleTest());
@@ -73,5 +72,41 @@ console.log(validNameCheck());
 /////////////////////////////////////
 
 /////////////////////////////////////
-//Test generateTaskList
+//Test generateTaskList - vars moved to module
+//let nameVar = "";
+//let tagVar = "";
+//let dateVar = "";
+//let idVar = "";
+
 taskDetailsPrompt();
+//working
+/////////////////////////////////////
+
+/////////////////////////////////////
+//Test taskObjecConstruct
+const TaskDatabase = [];//array to contain task objects
+
+console.log("task db TaskDatabase generated");
+
+TaskDatabase[nameTempVar] = new Task(nameTempVar, tagTempVar, dateTempVar, idTempVar)//call global variables containing the new task details
+
+
+console.log(TaskDatabase);
+
+TaskDatabase[nameTempVar] = new Task(nameTempVar, tagTempVar, dateTempVar, idTempVar)//call global variables containing the new task details
+
+console.log("new Task generated");
+console.log(TaskDatabase);
+console.log(nameTempVar);
+
+//ISSUES
+//*unable to call TaskDatabase
+//*unable to call nameVar
+//*unable to call tagVar
+
+//TRIED
+//moving TaskDatabase to the upper lines - FAILED
+//hiding the object call then calling TaskDatabase - FAILED
+//export class using other syntax
+
+/////////////////////////////////////
