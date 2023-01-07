@@ -5,6 +5,7 @@ import validNameCheck from "./validNameCheck"
 import {nameTempVar,tagTempVar, dateTempVar, idTempVar, taskDetailsPrompt} from "./taskDetailsPrompt"
 import {Task} from "./taskObjecConstruct.js"
 import './styles/main.css' 
+import { sampleDate } from "./date"
 
 //Test moduleTest
 console.log(moduleTest());
@@ -92,6 +93,8 @@ TaskDatabase[nameTempVar] = new Task(nameTempVar, tagTempVar, dateTempVar, idTem
 
 
 console.log(TaskDatabase);
+taskDetailsPrompt();
+
 
 TaskDatabase[nameTempVar] = new Task(nameTempVar, tagTempVar, dateTempVar, idTempVar)//call global variables containing the new task details
 
@@ -110,3 +113,7 @@ console.log(nameTempVar);
 //export class using other syntax
 
 /////////////////////////////////////
+
+console.log(sampleDate);
+
+//displaying but adding one more day to the date
