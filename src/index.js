@@ -6,6 +6,8 @@ import {nameTempVar,tagTempVar, dateTempVar, idTempVar, taskDetailsPrompt} from 
 import {Task} from "./taskObjecConstruct.js"
 import { sampleDate } from "./date"
 import {pickedDateVar, datePicker} from "./datePicker"
+import {pickedTagVar, tagPicker} from "./tagPicker"
+
 
 
 
@@ -109,7 +111,9 @@ console.log(sampleDate);
 
 //Event listener to date picker to trigger savin the value 
 let datePickerObject = document.getElementById("dateInput");
-
-//datePickerObject.addEventListener("onChange", datePicker);
 datePickerObject.addEventListener("change", datePicker);
 //working
+
+//Event listener to date picker to trigger savin the value 
+let tagPickerObject = document.getElementById("tagList");
+tagPickerObject.addEventListener("change", tagPicker);
