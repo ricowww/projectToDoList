@@ -6,7 +6,7 @@
 //The function cannot work without these variables hence they are included in this module
 let nameTempVar = "";
 let tagTempVar = "";
-let dateTempVar = "";
+let dateTempVar = ""; /* Obsolete */
 let idTempVar = "";
 
 //Gather input details for a new task

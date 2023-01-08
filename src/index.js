@@ -4,9 +4,12 @@ import objArrayToTaskDivs from "./objArrayToTaskDivs"
 import validNameCheck from "./validNameCheck"
 import {nameTempVar,tagTempVar, dateTempVar, idTempVar, taskDetailsPrompt} from "./taskDetailsPrompt"
 import {Task} from "./taskObjecConstruct.js"
-import './styles/main.css' 
 import { sampleDate } from "./date"
+import {pickedDateVar, datePicker} from "./datePicker"
 
+
+
+import './styles/main.css' 
 //Test moduleTest
 console.log(moduleTest());
 
@@ -79,7 +82,7 @@ console.log(validNameCheck());
 //let dateVar = "";
 //let idVar = "";
 
-taskDetailsPrompt();
+//taskDetailsPrompt();
 //working
 /////////////////////////////////////
 
@@ -87,33 +90,26 @@ taskDetailsPrompt();
 //Test taskObjecConstruct
 const TaskDatabase = [];//array to contain task objects
 
-console.log("task db TaskDatabase generated");
+//console.log("task db TaskDatabase generated");
+//TaskDatabase[nameTempVar] = new Task(nameTempVar, tagTempVar, dateTempVar, idTempVar)//call global variables containing the new task details
+//taskDetailsPrompt();
+//TaskDatabase[nameTempVar] = new Task(nameTempVar, tagTempVar, dateTempVar, idTempVar)//call global variables containing the new task details
+//console.log("new Task generated");
+//console.log(TaskDatabase);
+//console.log(nameTempVar);
 
-TaskDatabase[nameTempVar] = new Task(nameTempVar, tagTempVar, dateTempVar, idTempVar)//call global variables containing the new task details
 
 
-console.log(TaskDatabase);
-taskDetailsPrompt();
-
-
-TaskDatabase[nameTempVar] = new Task(nameTempVar, tagTempVar, dateTempVar, idTempVar)//call global variables containing the new task details
-
-console.log("new Task generated");
-console.log(TaskDatabase);
-console.log(nameTempVar);
-
-//ISSUES
-//*unable to call TaskDatabase
-//*unable to call nameVar
-//*unable to call tagVar
-
-//TRIED
-//moving TaskDatabase to the upper lines - FAILED
-//hiding the object call then calling TaskDatabase - FAILED
-//export class using other syntax
 
 /////////////////////////////////////
 
 console.log(sampleDate);
 
 //displaying but adding one more day to the date
+
+//Event listener to date picker to trigger savin the value 
+let datePickerObject = document.getElementById("dateInput");
+
+//datePickerObject.addEventListener("onChange", datePicker);
+datePickerObject.addEventListener("change", datePicker);
+//working
