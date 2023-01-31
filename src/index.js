@@ -7,6 +7,8 @@ import {Task} from "./taskObjecConstruct.js"
 import { sampleDate } from "./date"
 import {pickedDateVar, datePicker} from "./datePicker"
 import {pickedTagVar, tagPicker} from "./tagPicker"
+import {tagPickerAnchor, tagListMaker} from "./tagListMaker"
+
 
 
 
@@ -95,7 +97,7 @@ const TaskDatabase = [];//array to contain task objects
 //console.log("task db TaskDatabase generated");
 //TaskDatabase[nameTempVar] = new Task(nameTempVar, tagTempVar, dateTempVar, idTempVar)//call global variables containing the new task details
 //taskDetailsPrompt();
-//TaskDatabase[nameTempVar] = new Task(nameTempVar, tagTempVar, dateTempVar, idTempVar)//call global variables containing the new task details
+//TaskDatabase[nameTempVar] = new Task(nameTvalidNameCheckempVar, tagTempVar, dateTempVar, idTempVar)//call global variables containing the new task details
 //console.log("new Task generated");
 //console.log(TaskDatabase);
 //console.log(nameTempVar);
@@ -117,3 +119,9 @@ datePickerObject.addEventListener("change", datePicker);
 //Event listener to date picker to trigger savin the value 
 let tagPickerObject = document.getElementById("tagList");
 tagPickerObject.addEventListener("change", tagPicker);
+
+//testing if dropdowns can be dynamically created
+let tgar = ["a", "b", "c"];
+tagListMaker(tgar);
+//works but the options are not showing
+
